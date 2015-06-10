@@ -1,0 +1,77 @@
+MOV A,71
+XCHG
+MOV A,70
+CALL 16
+OUT A
+HLT
+
+
+
+
+
+
+
+
+
+
+XCHG A,B ; CALL FUNCTION              
+MOV 73,B
+MOV A,72
+XCHG A,B
+MOV A,71
+SUB A,B
+XCHG A,B
+MOV 71,B
+JNZ 40          ;LABEL
+MOV A,73
+RET
+
+
+
+
+
+
+
+
+
+
+
+
+
+MOV A,70 ;LABEL
+XCHG
+MOV A,70
+ADD A,B
+JMP 16
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DN 3
+DN 4
+DN 1
+DN 0
+
+
+
